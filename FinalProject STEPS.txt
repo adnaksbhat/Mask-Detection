@@ -1,0 +1,44 @@
+/////
+Create folders -> data,face_detector,model,output,test
+data shld contain folders -> images,with_mask,without_mask
+output shld contain folders -> test,train
+
+/////
+paste with and without mask images in their respective folders
+paste 2 code files in files in file_detector (these file contains models to detect faces)
+
+/////
+install tensorflow in cmdprmpt
+
+/////
+code train_model.py
+
+/////
+in training code u can see in line numbr 23 till 30, give -d,-p,-m as arguments 
+it is helpul in cmd promt to identify which folder is which.
+
+
+
+
+
+/////
+once everything is done the results should be,
+in model folder ull have 3 files (alpha,beta and another)
+in output under train folder ull have 3 plot graphs
+
+
+/////
+inside test folder put images that u need to test in jpg format
+
+
+/////
+now in cmdprompt,
+
+python train_model.py -d short_dataimages
+
+#this is for training
+#now pass the image u want to detect masks
+
+python detect_mask_image.py -i test/2.jpg 
+
+##this above command takes 20min  so wait....
